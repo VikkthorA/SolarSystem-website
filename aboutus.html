@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/aboutus.css">
+      <link rel="stylesheet" href="css/logo.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+	
+	  <script src="js/languageSwitcher.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  <title>За нас</title>
+</head>
+<body>
+  <header>
+    <div class="logo_div">
+      <a href="index.html"><img src="pictures/logo.png" alt="logo" class="logo"/></a>
+    </div>
+    <div class="nav-lang">
+      <i href="#" onclick="switchLanguage('en')"><img src="pictures/icons/en-icon.png"></i>
+      <i href="#" onclick="switchLanguage('bg')"><img src="pictures/icons/bg-icon.png"></i>
+    </div>
+ <nav>
+  <a href="index.html" data-translate="title_home">Начало</a>
+  <div class="dropdown">
+    <a href="solarsystem.html" class="system" data-translate="solar_system">Слънчева система</a>
+    <div class="dropdown-content">
+      <a href="sun.html" data-translate="sun">Слънце</a>
+      <a href="mercury.html" data-translate="mercury">Меркурий</a>
+      <a href="venus.html" data-translate="venus">Венера</a>
+      <a href="earth.html" data-translate="earth">Земя</a>
+      <a href="mars.html" data-translate="mars">Марс</a>
+      <a href="jupiter.html" data-translate="jupiter">Юпитер</a>
+      <a href="saturn.html" data-translate="saturn">Сатурн</a>
+      <a href="uranus.html" data-translate="uranus">Уран</a>
+      <a href="neptune.html" data-translate="neptune">Нептун</a>
+    </div>
+  </div>
+    <a href="aboutus.html" data-translate="about_us">За нас</a>
+ </nav>
+
+</header>
+  <main>
+    <div class="aboutme">
+        <div class="imena">
+            <img src="pictures/profile_viktor.jpg" alt="aboutme-1">
+            <h3 data-translate="Viktor_name">Виктор Ангелов</h3>
+        </div>
+
+        <div class="bio">
+            <p style="text-indent: 40px;" data-translate ="bio_1">
+               Здравейте! Името ми е Виктор и съм съосновател на този сайт. Ученик съм в ПГИ „Иван Илиев“, където изучавам „Икономическа информатика“. Мотивите за избирането на темата са именно интересът, който и двамата споделяме към космоса, и желанието ни да заинтригуваме повече хора, запознавайки ги с мистериите му.
+            </p>
+            <div class="linkove">
+				<a href="https://www.facebook.com/6efAngelow/" target="_blank"><i><img src="pictures/icons/facebook.png" alt="facebook"></i></a>
+				<a href="https://www.instagram.com/vikktor_angelow/" target="_blank"><i><img src="pictures/icons/instagram.png" alt="instagram"></i></a>
+				<a href="https://pgiblg.com/" target="_blank"><i><img src="pictures/icons/pgi-icon.png" alt="pgi"></i></a>
+			</div>
+        </div>
+    </div>
+
+    <div class="aboutme two">
+        <div class="imena">	
+            <img src="pictures/profile_deyan.jpg" alt="aboutme-1">
+            <h3 data-translate="Deyan_name">Деян  Петелов</h3>
+        </div>
+
+        <div class="bio">
+            <p style="text-indent: 40px;" data-translate = "bio_2">
+				Привет! Казвам се Деян и съм другият съосновател на сайта. Ученик съм в ЕГ „Акад. Людмил Стоянов“, където изучавам френски и английски език. От 10-ти клас имам възможността да специализирам в профил "Информационни технологии".
+            <div class="linkove">
+				<a href="https://www.facebook.com/dududuBandiT0dududu" target="_blank"><i><img src="pictures/icons/facebook.png" alt="facebook"></i></a>
+				<a href="https://www.instagram.com/wurliee/" target="_blank"><i><img src="pictures/icons/instagram.png" alt="instagram"></i></a>
+				<a href="https://www.egblg.com/" target="_blank"><i><img src="pictures/icons/eg-icon.png" alt="eg"></i></a>
+			</div>
+        </div>
+    </div>
+
+      <div class="form-container">
+        <div class="cta-form">
+          <h2 data-translate ="contact_us">Свържете се с нас!</h2> 
+        <p data-translate="any_questions">С радост ще отговорим на въпросите ви.</p>
+        </div>
+
+        <form action="https://formspree.io/f/mzbnrabj" method="POST" class="form">
+          
+          <input type="text" name="name" placeholder="Name" class="form__input" id="name" required/>
+          <label for="name" class="form__label" data-translate = "put_your_name">Вашето име:</label>
+
+          <input type="email" name="email" placeholder="Email" class="form__input" id="email" required/>
+          <label for="email" class="form__label" data-translate="your_email">Вашият e-mail:</label>
+
+          <input type="text" name="subject" placeholder="Subject" class="form__input" id="subject" required/>
+          <label for="subject" class="form__label" data-translate = "your_msg">Съобщението ви:</label>
+          
+          <input type="submit" name="submit" data-translate="submit_" value="Изпрати">
+        </form>	
+      </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="row">
+        <div class="footer-col">
+          <h4><a href="map.html" data-translate = "site_map">Карта на сайт</a></h4>
+          <div class="map">
+            <a href="index.html" data-translate="title_home">Начало</a>
+			      <a href="solarsystem.html" data-translate="solar_system">Слънчева система</a>
+            <a href="zanas.html" data-translate="about_us">За нас</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-translate = "follow_us">Последвайте ни</h4>
+        <div class="social-links">
+        <a href="https://www.egblg.com/" target="_blank"><i><img src="pictures/icons/eg-icon.png" alt="eg"></i></a>
+        <a href="https://pgiblg.com/" target="_blank"><i><img src="pictures/icons/pgi-icon.png" alt="pgi"></i></a>
+        </div>
+        </div>
+       
+      </div>
+      <p data-translate = "footer_words">Този сайт е създаден с учебна цел.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/object.css">
+  <link rel="stylesheet" href="css/logo.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+	
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  
+  <title data-translate="neptune">Нептун</title>
+	  <script src="js/languageSwitcher.js"></script>
+	  <script src="js/gallery.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="logo_div">
+      <a href="index.html"><img src="pictures/logo.png" alt="logo" class="logo"/></a>
+    </div>
+    <div class="nav-lang">
+      <i href="#" onclick="switchLanguage('en')"><img src="pictures/icons/en-icon.png"></i>
+      <i href="#" onclick="switchLanguage('bg')"><img src="pictures/icons/bg-icon.png"></i>
+    </div>
+    <nav>
+      <a href="index.html" data-translate="title_home">Начало</a>
+      <div class="dropdown">
+        <a href="solarsystem.html" class="system" data-translate="solar_system">Слънчева система</a>
+        <div class="dropdown-content">
+          <a href="sun.html" data-translate="sun">Слънце</a>
+          <a href="mercury.html" data-translate="mercury">Меркурий</a>
+          <a href="venus.html" data-translate="venus">Венера</a>
+          <a href="earth.html" data-translate="earth">Земя</a>
+          <a href="mars.html" data-translate="mars">Марс</a>
+          <a href="jupiter.html" data-translate="jupiter">Юпитер</a>
+          <a href="saturn.html" data-translate="saturn">Сатурн</a>
+          <a href="uranus.html" data-translate="uranus">Уран</a>
+          <a href="neptune.html" data-translate="neptune">Нептун</a>
+        </div>
+      </div>
+      <a href="aboutus.html" data-translate="about_us">За нас</a>
+     </nav>
+   </header>
+    
+    <div class="first-container">
+      <div class="left_div">
+        <h2 data-translate="neptune">Нептун</h2>
+        <p data-translate = "neptune1">Нептун е първата планета, чието съществуване беше предсказано математически преди да бъде наблюдавана през телескоп. Нейното откритие през 1846 година беше резултат на изчисленията на Урбен Леверие и Джон Коуч Адамс, които забелязаха необясними отклонения в орбитата на Уран, които можеха да бъдат обяснени само с присъствието на още една неизвестна планета.
+        </p>
+        <p data-translate = "neptune2">Нептун има 14 известни луни, като най-голямата от тях, Тритон, е интересна с това, че се движи в ретроградна орбита, което означава, че се върти в посока, обратна на въртенето на Нептун. Предполага се, че Тритон е бил уловен от гравитацията на Нептун и не е образуван в непосредствена близост до планетата.	
+        </p>
+      </div>
+      <div class="center_div">
+        <div class="planet_border">
+          <img src="pictures/planeti/NEPTUNE.png" alt="neptune"> 
+        </div>
+      </div>
+      <div class="right_div">
+        <p data-translate = "neptune3"> Поради голямото си разстояние от Слънцето и бавното си орбитално движение, една година на Нептун (пълно обиколение около Слънцето) е равна на приблизително 165 земни години, което води до много дълги сезони.
+		</P>
+        <p data-translate = "neptune4">Нептун е една от най-студените планети в Слънчевата система, с температури на върховете на облаците достигащи до около -218°C (-360°F), което го прави изключително студено място, въпреки че Уран понякога може да има още по-ниски температури в своята атмосфера
+        </p>
+        <p data-translate = "neptune5">Нептун има най-силните ветрове в Слънчевата система, със скорости, които могат да достигнат до 2,100 км/ч (повече от 1,300 мили в час). Тези ветрове са особено впечатляващи, като се има предвид, че Нептун получава само малък дял от слънчевата светлина в сравнение с другите планети.
+        </p>
+      </div>
+    </div>
+
+    <div class="second-container">
+
+      <video data-translate="neptune_video" src="videos/neptune/neptune_bg.mp4" controls></video>
+			
+
+      <div class="right_div">
+        <div class="gallery-container">
+          <div id="imageGallery">
+            <img src="gallery/neptune1.png" alt="Image 1" class="active">
+            <img src="gallery/neptune2.jpg" alt="Image 2">
+            <img src="gallery/neptune3.jpg" alt="Image 3">
+          </div>
+          <button id="prevBtn">&#10094;</button>
+          <button id="nextBtn">&#10095;</button>
+        </div>     
+      </div>
+    </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="row">
+        <div class="footer-col">
+          <h4><a href="map.html" data-translate = "site_map">Карта на сайт</a></h4>
+          <div class="map">
+            <a href="index.html" data-translate="title_home">Начало</a>
+			      <a href="solarsystem.html" data-translate="solar_system">Слънчева система</a>
+            <a href="aboutus.html" data-translate="about_us">За нас</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-translate = "follow_us">Последвайте ни</h4>
+        <div class="social-links">
+          <a href="https://www.egblg.com/" target="_blank"><i><img src="pictures/icons/eg-icon.png" alt="eg"></i></a>
+          <a href="https://pgiblg.com/" target="_blank"><i><img src="pictures/icons/pgi-icon.png" alt="pgi"></i></a>
+        </div>
+        </div>
+       
+      </div>
+      <p data-translate = "footer_words">Този сайт е създаден с учебна цел.</p>
+    </div>
+  </footer>
+</body>
+</html>
+

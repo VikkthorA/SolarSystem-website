@@ -1,0 +1,110 @@
+body {
+  background-image: url(../pictures/fon.png);
+  margin: 0;
+  font-family: 'Comfortaa', Comfortaa;	
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  transition: color 0.3s, border-radius 0.2s, background-color 0.3s ease;
+}
+
+.solar-system {
+  margin: 10px auto 50px auto;
+  width: 95%;
+
+  background-image: url(../pictures/lychi.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  border-radius: 16px;
+
+  z-index: 1;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  height: 550px;
+  z-index: 3;
+}
+
+.container div {
+  flex: 1;
+  position: relative;
+}
+
+.container a { width: 95%; height: auto; position: absolute; border-radius: 50%; z-index: 3;}
+
+.container a.sun { top: -47.5%; left: -25%; transform: scale(0.4);}
+.container a.mercury { top: -60%; left: 1.2%; transform: scale(0.1);}
+.container a.venus { top: -15%; left: 7.5%; transform: scale(0.1);}
+.container a.earth { top: -75%; left: 14%; transform: scale(0.1);}
+.container a.mars { top: -40%; left: 22%; transform: scale(0.1);}
+.container a.jupiter { top: -65%; left: 29%; transform: scale(0.15);}
+.container a.saturn { top: -20%; left: 37%; transform: scale(0.2);}
+.container a.uranus { top: -80%; left: 42%; transform: scale(0.15);}
+.container a.neptune { top: -50%; left: 49%; transform: scale(0.13);}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1366px) {
+  .container a.sun { top: -47.5%; left: -25%; transform: scale(0.4);}
+.container a.mercury { top: -60%; left: 0%; transform: scale(0.1);}
+.container a.venus { top: -15%; left: 6%; transform: scale(0.1);}
+.container a.earth { top: -75%; left: 13%; transform: scale(0.1);}
+.container a.mars { top: -40%; left: 21%; transform: scale(0.1);}
+.container a.jupiter { top: -65%; left: 27%; transform: scale(0.15);}
+.container a.saturn { top: -20%; left: 34%; transform: scale(0.2);}
+.container a.uranus { top: -80%; left: 40%; transform: scale(0.15);}
+}
+@media screen and (max-width: 1092px){
+  .container a.sun { top: -47.5%; left: -25%; transform: scale(0.4);}
+.container a.mercury { top: -60%; left: -2%; transform: scale(0.1);}
+.container a.venus { top: -15%; left: 3%; transform: scale(0.1);}
+.container a.earth { top: -75%; left: 10%; transform: scale(0.1);}
+.container a.mars { top: -40%; left: 20%; transform: scale(0.1);}
+.container a.jupiter { top: -65%; left: 25%; transform: scale(0.15);}
+.container a.saturn { top: -20%; left: 32%; transform: scale(0.2);}
+.container a.uranus { top: -80%; left: 37%; transform: scale(0.15);}
+.container a.neptune { top: -50%; left: 46%; transform: scale(0.13);}
+
+}
+@media screen and (max-width: 950px){
+  .container a.sun { top: -47.5%; left: -35%; transform: scale(0.4);}
+.container a.mercury { top: -60%; left: -3%; transform: scale(0.1);}
+.container a.venus { top: -15%; left:  1.5%; transform: scale(0.1);}
+.container a.earth { top: -75%; left: 9%; transform: scale(0.1);}
+.container a.mars { top: -40%; left: 18.5%; transform: scale(0.1);}
+.container a.jupiter { top: -65%; left: 24%; transform: scale(0.15);}
+.container a.saturn { top: -20%; left: 30%; transform: scale(0.2);}
+.container a.uranus { top: -80%; left: 35%; transform: scale(0.15);}
+.container a.neptune { top: -50%; left: 46%; transform: scale(0.13);}
+}
+@media screen and (max-width: 792px){
+.container a.sun { top: -47.5%; left: -45%; transform: scale(0.4);}
+.container a.mercury { top: -60%; left: -5%; transform: scale(0.1);}
+.container a.venus { top: -15%; left:  -1%; transform: scale(0.1);}
+.container a.earth { top: -75%; left: 8%; transform: scale(0.1);}
+.container a.mars { top: -40%; left: 18%; transform: scale(0.1);}
+.container a.jupiter { top: -65%; left: 22%; transform: scale(0.15);}
+.container a.saturn { top: -20%; left: 28%; transform: scale(0.2);}
+.container a.uranus { top: -80%; left: 33%; transform: scale(0.15);}
+.container a.neptune { top: -50%; left: 44%; transform: scale(0.13);}
+}
+@media screen and (max-width: 600px){
+.container a.sun { top: -47.5%; left: -50%; transform: scale(0.2); }
+.container a.mercury { top: -60%; left: -13%; transform: scale(0.08);}
+.container a.venus { top: -15%; left:  -7%; transform: scale(0.08);}
+.container a.earth { top: -75%; left: 11%; transform: scale(0.07);}
+.container a.mars { top: -40%; left: 19%; transform: scale(0.09);}
+.container a.jupiter { top: -65%; left: 29%; transform: scale(0.1);}
+.container a.saturn { top: -20%; left: 28%; transform: scale(0.1);}
+.container a.uranus { top: -80%; left: 35%; transform: scale(0.1);}
+.container a.neptune { top: -50%; left: 47%; transform: scale(0.1);}
+}

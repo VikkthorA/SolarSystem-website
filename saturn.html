@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/object.css">
+  <link rel="stylesheet" href="css/logo.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+	
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  
+  <title data-translate="saturn">Сатурн</title>
+	  <script src="js/languageSwitcher.js"></script>
+	  <script src="js/gallery.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="logo_div">
+      <a href="index.html"><img src="pictures/logo.png" alt="logo" class="logo"/></a>
+    </div>
+    <div class="nav-lang">
+      <i href="#" onclick="switchLanguage('en')"><img src="pictures/icons/en-icon.png"></i>
+      <i href="#" onclick="switchLanguage('bg')"><img src="pictures/icons/bg-icon.png"></i>
+    </div>
+    <nav>
+      <a href="index.html" data-translate="title_home">Начало</a>
+      <div class="dropdown">
+        <a href="solarsystem.html" class="system" data-translate="solar_system">Слънчева система</a>
+        <div class="dropdown-content">
+          <a href="sun.html" data-translate="sun">Слънце</a>
+          <a href="mercury.html" data-translate="mercury">Меркурий</a>
+          <a href="venus.html" data-translate="venus">Венера</a>
+          <a href="earth.html" data-translate="earth">Земя</a>
+          <a href="mars.html" data-translate="mars">Марс</a>
+          <a href="jupiter.html" data-translate="jupiter">Юпитер</a>
+          <a href="saturn.html" data-translate="saturn">Сатурн</a>
+          <a href="uranus.html" data-translate="uranus">Уран</a>
+          <a href="neptune.html" data-translate="neptune">Нептун</a>
+        </div>
+      </div>
+      <a href="aboutus.html" data-translate="about_us">За нас</a>
+     </nav>
+   </header>
+    
+    <div class="first-container">
+      <div class="left_div">
+        <h2 data-translate="saturn">Сатурн</h2>
+        <p data-translate = "saturn1">Най-известната характеристика на Сатурн са неговите пръстени. Те са съставени предимно от ледени частици с различен размер – от микроскопични зърна до огромни късове, които орбитират около планетата. Пръстените могат да достигнат до 282,000 км в ширина, но са изненадващо тънки – в някои части дебелината им е само около 10 метра.
+        </p>
+        <p data-translate = "saturn2">Въпреки огромния си размер,газовият гигант , Сатурн е планетата с най-ниска плътност в Слънчевата система. Той е достатъчно лек, така че ако бихте могли да поставите Сатурн в огромен океан, той би плавал. Плътността на Сатурн е по-малка от плътността на водата.
+        </p>
+      </div>
+      <div class="center_div">
+        <div class="planet_border">
+          <img src="pictures/planeti/SATURN.png" alt="saturn"> 
+        </div>
+      </div>
+      <div class="right_div">
+        <p data-translate = "saturn3">Подобно на Земята, Сатурн преживява сезони поради наклона на своята ос. Въпреки това, тъй като една година на Сатурн трае около 29.5 земни години, всеки сезон продължава около 7 земни години.
+		</P>
+        <p data-translate = "saturn4">Сатурн има впечатляващ брой луни, с повече от 80 потвърдени луни, което го прави планетата с най-много луни в Слънчевата система към момента. Най-голямата луна, Титан, превъзхожда дори планетата Меркурий по размер и притежава гъста атмосфера.
+        </p>
+        <p data-translate = "saturn5">Северният полюс на Сатурн показва уникален хексагонален образец, който не се наблюдава на другите планети. Този шестоъгълен вихър е стабилен и се запазва във времето, което е уникално атмосферно явление.
+        </p>
+      </div>
+    </div>
+
+    <div class="second-container">
+
+      <iframe data-translate="saturn_video"  src="https://www.youtube.com/embed/5gcFYjaMGFM?si=9v2KCX4iDxNVL98J" controls title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			
+
+      <div class="right_div">
+        <div class="gallery-container">
+          <div id="imageGallery">
+            <img src="gallery/saturn2.jpg" alt="Image 1" class="active">
+            <img src="gallery/saturn1.jpg" alt="Image 2">
+            <img src="gallery/saturn3.png" alt="Image 3">
+          </div>
+          <button id="prevBtn">&#10094;</button>
+          <button id="nextBtn">&#10095;</button>
+        </div>     
+      </div>
+    </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="row">
+        <div class="footer-col">
+          <h4><a href="map.html" data-translate = "site_map">Карта на сайт</a></h4>
+          <div class="map">
+            <a href="index.html" data-translate="title_home">Начало</a>
+			      <a href="solarsystem.html" data-translate="solar_system">Слънчева система</a>
+            <a href="aboutus.html" data-translate="about_us">За нас</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-translate = "follow_us">Последвайте ни</h4>
+        <div class="social-links">
+          <a href="https://www.egblg.com/" target="_blank"><i><img src="pictures/icons/eg-icon.png" alt="eg"></i></a>
+          <a href="https://pgiblg.com/" target="_blank"><i><img src="pictures/icons/pgi-icon.png" alt="pgi"></i></a>
+        </div>
+        </div>
+       
+      </div>
+      <p data-translate = "footer_words">Този сайт е създаден с учебна цел.</p>
+    </div>
+  </footer>
+</body>
+</html>
+

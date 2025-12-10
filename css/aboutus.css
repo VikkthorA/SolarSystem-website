@@ -1,0 +1,303 @@
+body {
+  background-image: url(../pictures/fon.png);
+  margin: 0;
+  font-family: 'Comfortaa', Comfortaa;	
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  transition: color 0.3s, border-radius 0.2s, background-color 0.3s ease;
+}
+
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+
+.aboutme, .aboutme-two {
+    height: 400px;
+    margin: 30px auto;
+    
+    background-color: #f0ffff;
+    color: #0a111c;
+
+    border: #34579f 4px solid;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px #34579f, 0px -8px 16px 0px #34579f;
+    display: flex;
+}
+
+.aboutme {
+    flex-direction: row;
+    width: 85%;
+}
+.aboutme .imena{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.two {
+    flex-direction: row-reverse;
+    /* width: 85%; */
+}
+
+.aboutme .imena, .aboutme .two .imena {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.aboutme .imena {
+    float: left;
+    width: 25%;
+
+}
+
+.aboutme .two .imena {
+    float: right;
+    width: 80%;
+}
+
+.aboutme .imena img, .aboutme .two .imena img {
+    width: 200px;
+    height: 200px;
+    margin: 35px 35px 10px 35px;
+    
+    border: 4px solid transparent;
+    border-radius: 15px;
+
+    background: linear-gradient(#0c141c, #0c1458, #34579f) padding-box, linear-gradient(#0c141c, #0c1458, #34579f) border-box;
+    box-shadow: 0px 2px 16px 0px #34579f, 0px 0px 16px 0px #0c1458, 0px -2px 16px 0px #0a141c;
+}
+
+.aboutme .imena h3, .aboutme .two .imena h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18pt;
+    padding-bottom: 10px;
+}
+
+.aboutme .bio {
+  word-wrap: break-word;
+    width: 75%;
+    height: 100%;
+    color: #0a141c;
+}
+
+.aboutme p,.aboutme .two p {
+    padding: 45px 30px 30px 30px;
+    width: 80%;
+    line-height: 2rem;
+  word-wrap: break-word;
+}
+
+.linkove {
+    display: flex;
+    justify-content: center;
+}
+
+.linkove a {
+  display: inline-block;
+  height: 60px;
+  margin: 0 25px 10px 0;
+  line-height: 40px;
+  color: #0a141c;
+  transition: all 0.5s ease;
+} 
+
+.linkove img {
+  width: 60px;
+  margin: 0 10px 10px 0;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  border: 5px #34579f solid;
+  box-shadow: 0px 4px 16px 0px #34579f, 0px -4px 16px 0px #34579f;
+}
+
+.form-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 2rem 1.5rem;
+    background-color: #f0ffff;
+    margin: 20px auto 60px auto;
+
+    background-color: #f0ffff;
+    color: #0a111c;
+
+    border: #34579f 4px solid;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px #34579f, 0px -8px 16px 0px #34579f;
+
+    
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+    }
+    
+    .cta-form {
+      margin-bottom: 2rem;
+      text-align: center;
+      
+      @media (min-width: 768px) {
+        margin-bottom: 0;
+        margin-right: 2rem;
+        text-align: left;
+      
+      }
+      
+      h2 {
+      font-size: 1.5rem;
+      width: 100%;
+      max-width: 25ch;
+      margin: 0 auto;
+      text-align: center;
+      
+        @media (min-width: 768px) {
+          text-align: left;
+          margin: 0;
+        }
+      }
+      
+      p {
+        margin-top: 1rem;
+        font-size: 1rem;
+        width: 100%;
+        max-width: 24ch;
+      }
+    }
+    
+  }
+  
+
+
+.form {
+    align-self: center;
+  }
+
+  .form__input {
+    width: clamp(120px, 50vw, 420px);
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 0.625rem auto;
+    transition: all 250ms;
+    @media (min-width: 768px) {
+      width: clamp(120px, 35vw, 420px);
+    }
+    
+    &:focus {
+      outline: none;
+      border-top-color: rgba(0,0,0,0.1);
+    }
+    
+
+    &:focus + .form__label, &:not(:placeholder-shown) + .form__label {
+      transform: translateY(-4.50rem) scale(1);
+      color: black;
+    }
+    
+
+    &::placeholder {
+        display: none;
+        color: transparent;
+      
+        -webkit-user-select: none; 
+        -ms-user-select: none;
+        user-select: none; 
+    }
+    
+    
+    &:not(:placeholder-shown) {
+      border-top-color: rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .form__label {
+    font-size: 1rem;
+    color: grey;
+    display: block;
+    
+
+    transform: translate(1.25rem,-2.5rem);
+    transform-origin: 0 0;
+    transition: all 500ms;
+    
+    -webkit-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none;
+    
+
+    pointer-events: none; 
+
+    
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 35%;
+    margin: auto;
+    height: 35px;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    border: 3px solid transparent;
+    font-family: 'Comfortaa', Comfortaa;
+  
+    min-width: 40px;
+    transition: color 0.3s, border-radius 0.2s, background-color 0.3s, box-shadow 0.3s ease;
+
+    background: linear-gradient( white, white) padding-box, linear-gradient(#0c141c, #0c1458, #34579f) border-box;
+    color: #0a111c;
+}
+
+input[type="submit"]:hover, .linkove img:hover { 
+    color: #f0ffff;
+    background: linear-gradient(#0c141c, #0c1458, #34579f) padding-box, linear-gradient(#0c141c, #0c1458, #34579f) border-box;
+    box-shadow: 0px 1px 16px 0px #34579f, 0px 0px 16px 0px #0c1458, 0px -1px 16px 0px #0a141c;
+    border-color: transparent;
+
+}
+
+input[type="submit"]:active { 
+    opacity: 0.6;
+}
+
+@media screen and (max-width: 816px) {
+  .aboutme{
+    width: 90%;
+    height: auto;
+    padding-bottom: 15px;
+  }
+  .aboutme p{
+    width: 90%;
+    padding: 30px 15px;
+    font-size: 15px;
+  }
+  .aboutme .imena img, .aboutme-two .imena img {
+    width: 110px !important;
+    height: 110px  !important;
+    margin: 35px 35px 10px 35px;
+  
+}
+}
+
+@media screen and (max-width: 600px) {
+   .aboutme{
+    width: 95%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .aboutme .imena h3{
+    padding-bottom: 0 !important;
+   }
+   .aboutme p{
+    padding: 10px;
+   }
+}

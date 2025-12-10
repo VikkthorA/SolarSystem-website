@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/object.css">
+  <link rel="stylesheet" href="css/logo.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+	
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  
+  <title data-translate="mars">Марс</title>
+	  <script src="js/languageSwitcher.js"></script>
+	  <script src="js/gallery.js"></script>
+
+
+</head>
+<body>
+  <header>
+    <div class="logo_div">
+      <a href="index.html"><img src="pictures/logo.png" alt="logo" class="logo"/></a>
+    </div>
+    <div class="nav-lang">
+      <i href="#" onclick="switchLanguage('en')"><img src="pictures/icons/en-icon.png"></i>
+      <i href="#" onclick="switchLanguage('bg')"><img src="pictures/icons/bg-icon.png"></i>
+    </div>
+    <nav>
+      <a href="index.html" data-translate="title_home">Начало</a>
+      <div class="dropdown">
+        <a href="solarsystem.html" class="system" data-translate="solar_system">Слънчева система</a>
+        <div class="dropdown-content">
+          <a href="sun.html" data-translate="sun">Слънце</a>
+          <a href="mercury.html" data-translate="mercury">Меркурий</a>
+          <a href="venus.html" data-translate="venus">Венера</a>
+          <a href="earth.html" data-translate="earth">Земя</a>
+          <a href="mars.html" data-translate="mars">Марс</a>
+          <a href="jupiter.html" data-translate="jupiter">Юпитер</a>
+          <a href="saturn.html" data-translate="saturn">Сатурн</a>
+          <a href="uranus.html" data-translate="uranus">Уран</a>
+          <a href="neptune.html" data-translate="neptune">Нептун</a>
+        </div>
+      </div>
+        <a href="aboutus.html" data-translate="about_us">За нас</a>
+     </nav>
+   </header>
+    
+    <div class="first-container">
+      <div class="left_div">
+        <h2 data-translate="mars">Марс</h2>
+        <p data-translate = "mars1">Марс е известна още като "Червената планета" заради червения си цвят, който е резултат от големите количества железен оксид (ръжда) на повърхността ѝ. Това придава на планетата характерния червен оттенък, който може да бъде забелязан дори с невъоръжено око от Земята.
+        </p>
+        <p data-translate = "mars2">Въпреки че повърхността на Марс изглежда суха и безжизнена, изследвания показват, че под нея се крият обширни залежи от воден лед. Това откритие увеличава възможността за съществуването на живот в миналото и поддържа надеждите за бъдещи човешки мисии, които могат да използват този лед като ресурс.
+        </p>
+      </div>
+      <div class="center_div">
+        <div class="planet_border">
+          <img src="pictures/planeti/MARS.png" alt="mars"> 
+        </div>
+      </div>
+      <div class="right_div">
+        <p data-translate = "mars3">Марс е дом на най-високият вулкан в Слънчевата система - Олимп Монс. Вулканът е висок около 22 км, което е почти три пъти по-висок от Еверест.
+		</P>
+        <p data-translate = "mars5">Подобно на Земята, Марс също има сезони, поради наклона на неговата ос. Въпреки това, тъй като една година на Марс трае почти два пъти по-дълго от земната, сезоните също са съответно по-дълги.
+        </p>
+        <p data-translate = "mars4">Марс има две малки луни, Фобос и Деймос. Смята се, че те са уловени астероиди от астероидния пояс между Марс и Юпитер. Фобос постепенно се приближава към Марс и се очаква един ден да се сблъска с планетата или да бъде разкъсан от гравитационните сили, образувайки пръстен около Марс.
+        </p>
+      </div>
+    </div>
+
+    <div class="second-container">
+
+			<iframe data-translate="mars_video" src="https://www.youtube.com/embed/TA1_bra1iog?si=SymOgpS8cpX2nAu9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen> controls></iframe>
+
+      <div class="right_div">
+        <div class="gallery-container">
+          <div id="imageGallery">
+            <img src="gallery/mars2.jpg" alt="Image 1" class="active">
+            <img src="gallery/mars1.png" alt="Image 2">
+            <img src="gallery/mars3.jpg" alt="Image 3">
+          </div>
+          <button id="prevBtn">&#10094;</button>
+          <button id="nextBtn">&#10095;</button>
+        </div>     
+      </div>
+    </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="row">
+        <div class="footer-col">
+          <h4><a href="map.html" data-translate = "site_map">Карта на сайт</a></h4>
+          <div class="map">
+            <a href="index.html" data-translate="title_home">Начало</a>
+			      <a href="solarsystem.html" data-translate="solar_system">Слънчева система</a>
+            <a href="aboutus.html" data-translate="about_us">За нас</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-translate = "follow_us">Последвайте ни</h4>
+        <div class="social-links">
+          <a href="https://www.egblg.com/" target="_blank"><i><img src="pictures/icons/eg-icon.png" alt="eg"></i></a>
+          <a href="https://pgiblg.com/" target="_blank"><i><img src="pictures/icons/pgi-icon.png" alt="pgi"></i></a>
+        </div>
+        </div>
+       
+      </div>
+      <p data-translate = "footer_words">Този сайт е създаден с учебна цел.</p>
+    </div>
+  </footer>
+</body>
+</html>
+

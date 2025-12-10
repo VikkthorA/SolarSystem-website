@@ -1,0 +1,240 @@
+body {
+  background-image: url(../pictures/fon.png);
+  margin: 0;
+  font-family: 'Comfortaa', Comfortaa;	
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+  transition: color 0.3s, border-radius 0.2s, background-color 0.3s ease;
+}
+
+.first-container, .second-container {
+  display: flex !important;
+   justify-content: space-around;
+   align-items: center;
+  flex-direction: row !important;
+  margin-bottom: 40px;
+
+}
+
+.first-container .left_div, .first-container .right_div {
+  display: flex;
+  flex-direction: column;   
+  line-height: 2rem;
+}
+
+.first-container .left_div {
+  margin-left: 20px;
+  align-self: self-start;
+  width: 30%;
+}
+
+.first-container .right_div {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin-right: 20px;
+}
+
+.first-container .left_div h2 {
+  text-align: center;
+  font-size: 25px;
+  word-wrap: break-word;
+  padding-top: 15px;
+  padding-bottom: 25px;
+
+  background-color: #f0ffff;
+  color: #0a111c;
+
+  border: #34579f 4px solid;
+  border-radius: 25px;
+  box-shadow: 0px 8px 16px 0px #34579f, 0px -8px 16px 0px #34579f; 
+}
+
+.first-container .left_div p, .right_div p {
+  text-align: left;
+  text-indent: 5px;
+  font-size: 17px;
+  word-wrap: break-word;
+  margin: 15px;
+  padding: 10px;
+
+  background-color: #f0ffff;
+  color: #0a111c;
+
+  border: #34579f 4px solid;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px 0px #34579f, 0px -8px 16px 0px #34579f; 
+}
+
+.center_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: 35%;
+}
+
+.center_div .planet_border {
+  height: 90%;
+  width: 80%;
+  /* margin: -200px auto 20px auto; */
+}
+
+
+.planet_border img {
+  height: 100%;
+  width: 100%;
+}
+
+.second-container {
+  margin-bottom: 40px;
+}
+
+.second-container video, .second-container iframe {
+  height: 380px;
+  width: 50%;
+  margin: auto;
+  border: #f0ffff 4px solid;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px 0px #f0ffff, 0px -8px 16px 0px #f0ffff;
+}
+
+ .second-container .right_div {
+  width: 35%;
+  height: 380px;
+  margin: 30px;
+}
+.gallery-container {
+  position: absolute;
+  height: 380px;
+  width: 28%;
+  margin: auto; 
+  border: #f0ffff 4px solid;
+  border-radius: 15px;
+  box-shadow: 0px 8px 16px 0px #f0ffff, 0px -8px 16px 0px #f0ffff;
+}
+
+
+
+
+#imageGallery img {
+  display: none; 
+  width: 100%; 
+  height: 380px; 
+  border-radius: 15px;
+
+}
+
+#imageGallery img.active {
+  display: block; 
+}
+
+#prevBtn, #nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: 3px solid transparent;
+  cursor: pointer;
+  padding: 25px 15px; 
+  z-index: 10;
+  font-size: 1.25rem;
+
+}
+
+#prevBtn {
+  left: 0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#nextBtn {
+  right: 0;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#prevBtn:hover, #nextBtn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #000000;
+}
+
+#prevBtn:active, #nextBtn:active {
+  opacity: 0.6;
+}
+
+
+
+
+@media screen and (max-width: 1098px) {
+  .left_div{
+    margin-left: 10px;
+  }
+  .left_div h2{
+    font-size: 22px;
+  }
+  .left_div p{
+    font-size: 16px;
+    margin: 2px;
+    padding: 6px;
+  }
+  .right_div{
+    margin-left: 10px;
+  }
+
+  .right_div p{
+    font-size: 16px;
+    margin: 7px !important;
+  }
+}
+@media screen and (max-width: 768px){
+  .first-container, .second-container{
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .first-container .left_div p, .first-container .right_div p {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.25rem;
+  }
+
+  .right_div {
+    margin-top: 20px;
+  }
+  .first-container .left_div, .first-container .right_div {
+    width: 60%;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .center_div {
+    height: auto;
+    width: 60%;
+  }
+  
+  .center_div .planet_border {
+    height: 90%;
+    width: 80%;
+   
+  }  
+
+  .second-container iframe, .second-container video {
+    width: 80%;
+  }
+   .second-container .gallery-container, .second-container .right_div {
+      width: 81%; 
+      margin: 20px auto;
+    }
+  }
+
+@media screen and (max-width: 768px){
+  .center_div{
+    width: 80%;
+  }
+}

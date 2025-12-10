@@ -1,0 +1,62 @@
+.logo_div {
+  display: inline-block;
+  height: 115px;
+  width: 115px;
+  position: relative;
+  left: 60px;
+  top: 15px;
+  margin-right: 50px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 16px 0px rgba(4, 12, 36, 0.8), 0px -8px 16px 0px rgba(4, 12, 36, 0.8);
+}
+
+.logo_div a:hover {
+  display: inline-block;
+  height: 115px;
+  width: 115px;
+  border-radius: 50%;
+  box-shadow: 0px 8px 16px 0px rgba(255, 255, 255, 0.8), 0px -8px 16px 0px rgba(255, 255, 255, 0.8);
+  transform: scale(1)
+}
+
+.logo_div .logo:hover {
+  -webkit-animation: spin-logo 7s linear infinite;
+  animation: spin-logo 7s linear infinite;
+}
+
+@-webkit-keyframes spin-logo {
+  from {
+    -webkit-transform: scale(1) rotate(0deg);
+  }
+
+  to {
+    -webkit-transform: scale(1) rotate(360deg);
+  }
+}
+
+@keyframes spin-logo {
+  from {
+    transform: scale(1) rotate(0deg);
+  }
+
+  to {
+    transform: scale(1) rotate(360deg);
+  }
+}
+
+
+.logo_div a:active {
+  display: inline-block;
+  height: 115px;
+  width: 115px;
+  border-radius: 50%;
+  opacity: 0.5;
+  ;
+}
+
+.logo {
+  display: inline-block;
+  height: 115px;
+  width: 115px;
+  position: relative;
+}

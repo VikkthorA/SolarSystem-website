@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/object.css">
+  <link rel="stylesheet" href="css/logo.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/footer.css">
+	
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+  
+  <title data-translate="uranus">Уран - AstroAcademy</title>
+	  <script src="js/languageSwitcher.js"></script>
+	  <script src="js/gallery.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo_div">
+      <a href="index.html"><img src="pictures/logo.png" alt="logo" class="logo"/></a>
+    </div>
+    <div class="nav-lang">
+      <i href="#" onclick="switchLanguage('en')"><img src="pictures/icons/en-icon.png"></i>
+      <i href="#" onclick="switchLanguage('bg')"><img src="pictures/icons/bg-icon.png"></i>
+    </div>
+ <nav>
+  <a href="index.html" data-translate="title_home">Начало</a>
+  <div class="dropdown">
+    <a href="solarsystem.html" class="system" data-translate="solar_system">Слънчева система</a>
+    <div class="dropdown-content">
+      <a href="sun.html" data-translate="sun">Слънце</a>
+      <a href="mercury.html" data-translate="mercury">Меркурий</a>
+      <a href="venus.html" data-translate="venus">Венера</a>
+      <a href="earth.html" data-translate="earth">Земя</a>
+      <a href="mars.html" data-translate="mars">Марс</a>
+      <a href="jupiter.html" data-translate="jupiter">Юпитер</a>
+      <a href="saturn.html" data-translate="saturn">Сатурн</a>
+      <a href="uranus.html" data-translate="uranus">Уран</a>
+      <a href="neptune.html" data-translate="neptune">Нептун</a>
+    </div>
+  </div>
+    <a href="aboutus.html" data-translate="about_us">За нас</a>
+ </nav>
+   </header>
+    
+    <div class="first-container">
+      <div class="left_div">
+        <h2 data-translate="uranus">Уран</h2>
+        <p data-translate = "uranus1">Една от най-необичайните характеристики на Уран е нейното екстремно осово наклонение от около 98 градуса. Това означава, че планетата се върти "настрани" относно орбитата си около Слънцето, което води до екстремни сезонни промени и ден и нощ, които продължават по 42 земни години всяка. Една пълна обиколка около слънцето варира около 84 земни години.
+        </p>
+        <p data-translate = "uranus2">Уран е класифицирана като леден гигант заради относително малкато каменисто ядро и богатата на вода "мантия", която съдържа амоняк и метан, в съчетание с високо налягане, което превръща водата в "горещ лед".
+        </p>
+      </div>
+      <div class="center_div">
+        <div class="planet_border">
+          <img src="pictures/planeti/URANUS.png" alt="uranus"> 
+        </div>
+      </div>
+      <div class="right_div">
+        <p data-translate = "uranus3">Уран е откритa през 1781 година от Уилям Хершел, което я прави първата планета, открита с телескоп. Това откритие увеличи размера на известната Слънчева система двойно в онези времена.
+		</P>
+        <p data-translate = "uranus5">Атмосферата на Уран ѝ придава характерен синьо-зелен цвят, който се дължи на наличието на метан. Метанът абсорбира червената светлина и отразява синьо-зелената, което дава на Уран нейния цвят.
+        </p>
+        <p data-translate = "uranus4">Уран често е считана за мястото с най-студена атмосфера в Слънчевата система, с минимални температури на облаците около -224°C (-371°F). Това я прави едно от най-студените места в Слънчевата система.
+        </p>
+      </div>
+    </div>
+
+    <div class="second-container">
+
+      <video data-translate="uranus_video" src="videos/uranus/uranus_bg.mp4" controls></video>
+			
+
+      <div class="right_div">
+        <div class="gallery-container">
+          <div id="imageGallery">
+            <img src="gallery/uranus1.png" alt="Image 1" class="active">
+            <img src="gallery/uranus2.png" alt="Image 2">
+            <img src="gallery/uranus3.jpg" alt="Image 3">
+          </div>
+          <button id="prevBtn">&#10094;</button>
+          <button id="nextBtn">&#10095;</button>
+        </div>     
+      </div>
+    </div>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="row">
+        <div class="footer-col">
+          <h4><a href="map.html" data-translate = "site_map">Карта на сайт</a></h4>
+          <div class="map">
+            <a href="index.html" data-translate="title_home">Начало</a>
+			      <a href="solarsystem.html" data-translate="solar_system">Слънчева система</a>
+            <a href="aboutus.html" data-translate="about_us">За нас</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4 data-translate = "follow_us">Последвайте ни</h4>
+        <div class="social-links">
+          <a href="https://www.egblg.com/" target="_blank"><i><img src="pictures/icons/eg-icon.png" alt="eg"></i></a>
+          <a href="https://pgiblg.com/" target="_blank"><i><img src="pictures/icons/pgi-icon.png" alt="pgi"></i></a>
+        </div>
+        </div>
+       
+      </div>
+      <p data-translate = "footer_words">Този сайт е създаден с учебна цел.</p>
+    </div>
+  </footer>
+</body>
+</html>
+
